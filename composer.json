@@ -12,18 +12,33 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "zendframework/zend-component-installer": "^1.0 || ^2.1",
-        "zendframework/zend-skeleton-installer": "^0.1.7 || ^1.0",
         "zendframework/zend-mvc": "^3.1.1",
-        "zfcampus/zf-development-mode": "^3.2"
+        "zfcampus/zf-development-mode": "^3.2",
+        "zendframework/zend-cache": "^2.9.0",
+        "zendframework/zend-db": "^2.10.0",
+        "zendframework/zend-mvc-form": "^1.0",
+        "zendframework/zend-json": "^3.1.2",
+        "zendframework/zend-log": "^2.11",
+        "zendframework/zend-mvc-console": "^1.2.0",
+        "zendframework/zend-mvc-plugins": "^1.0.1",
+        "zendframework/zend-psr7bridge": "^1.2.0",
+        "zendframework/zend-session": "^2.9.1",
+        "zendframework/zend-servicemanager-di": "^1.2.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*",
+        "phpunit/phpunit": "9.2.2"
     },
+
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src/"
+            "Application\\": "module/Application/src/",
+            "App\\": "module/App/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ApplicationTest\\": "module/Application/test/"
+            "ApplicationTest\\": "module/Application/test/",
+            "AppTest\\": "module/App/test/"
         }
     },
     "extra": {
